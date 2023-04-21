@@ -87,11 +87,10 @@ jobs:
         with:
           name: my-deployment-package
           
-      - name: Apply Terraform
-        run: |
-          cd infrastructure
-          terraform apply -auto-approve
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-# ///test          
+      # - name: Apply Terraform
+      #   run: |
+      #     cd infrastructure
+      #     terraform apply -auto-approve
+      #   env:
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
